@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: ease;
+}
+
+body {
+    background-color: #020201;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #020201;
+    transition: top 1s ease 1s;
+    color: white;
+
+    /* approximate max height */
+
+}
+
+.loader h1 {
+    font-size: 1em;
+    top: 30px;
+    font-weight: 100;
+}
+
+.loader img {
+    width: 60px;
+    opacity: 0.4;
+    transition: opacity 1s ease 1s;
+    animation-name: spin;
+    animation-duration: 0.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+/*classlist for loading intro*/
+
+.loader-finish {
+    top: -100%;
+    pointer-events: none;
+}
+
+.loader-finish img {
+    opacity: 1;
+}
+
+/*classlist for loading intro ends*/
+
+/*header/ menu items*/
+header {
+    color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 3em 3em;
+    font-family: 'Libre Caslon Display', serif;
+    font-weight: 100;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    z-index: -1;
+    position: absolute;
+}
+
+header h1:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+header img {
+    width: 30px;
+    top: 20px;
+    z-index: 100000;
+}
+
+/*header/ menu items ends*/
+
+/*main page conents*/
+main {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 10vw;
+    position: absolute;
+
+    text-align: center;
+    text-transform: uppercase;
+    left: 38%;
+    top: 10em;
+    color: white;
+    animation: fadeOut;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+.keys {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.keys div {
+    width: 40px;
+    height: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+
+
+.mainone {
+    height: 100vh;
+    width: 100vw;
+    /*    background-color: aqua;*/
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.mainone img:nth-child(7) {
+    height: 400px;
+    position: absolute;
+    filter: brightness(1.3);
+
+
+}
+
+.mainone img:nth-child(3) {
+    position: absolute;
+    margin: -30px;
+    bottom: 12em;
+    height: 24em;
+    animation-name: spin;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.glow1 {
+    z-index: -1000;
+    height: 100vh;
+    width: 100vw;
+    top: 10em;
+    right: 35px;
+    background-image: radial-gradient(closest-side circle, #f3cb7c, #f3cb7c, #020201);
+}
+
+.starsone {
+    position: absolute;
+    width: 40em;
+    animation-name: spin;
+    animation-duration: 150s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: brightness(1.8);
+
+}
+
+.starsone1 {
+    position: absolute;
+    width: 60em;
+    animation-name: spin1;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.starsone2 {
+    position: absolute;
+    width: 40em;
+    animation-name: spin1;
+    animation-duration: 350s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: blur(1px);
+}
+
+/*main page conents ends*/
+
+/*audio elements and play anaimtion*/
+.music {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music div {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 5px solid #f3cb7c;
+}
+
+.music button {
+    border-radius: 50%;
+    border: 1.5px solid #f3cb7c;
+    transition: 0.2s ease-in;
+    color: #f3cb7c;
+    font-size: 1.4em;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all 150ms linear;
+    opacity: 0.9;
+}
+
+.music button:hover {
+    background-color: white;
+    opacity: 0.9;
+    color: black;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 150ms linear;
+}
+
+.song1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    right: 12vw;
+    top: 20vh;
+}
+
+.song2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    right: 19vw;
+    bottom: 10vh;
+}
+
+.song3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    left: 19vw;
+    bottom: 10vh;
+}
+
+.song4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    left: 12vw;
+    top: 20vh;
+}
+
+.song5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #f3cb7c;
+    width: 20px;
+    height: 20px;
+    right: 20vw;
+    bottom: 30vh;
+    filter: blur(1px);
+}
+
+.song6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #f3cb7c;
+    width: 20px;
+    height: 20px;
+    left: 0vw;
+    bottom: 30vh;
+    filter: blur(1px);
+}
+
+.play {
+    filter: none;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: blur(1px);
+    display: none;
+}
+
+.one {
+    display: none;
+    height: 122px;
+}
+
+.two {
+    display: none;
+    height: 122px;
+}
+
+.three {
+    display: none;
+    height: 122px;
+}
+
+.four {
+    display: none;
+    height: 122px;
+}
+
+/*claslists for play animation*/
+.oneactive {
+    display: block;
+}
+
+.twoactive {
+    display: block;
+
+}
+
+.threeactive {
+    display: block;
+}
+
+.fouractive {
+    display: block;
+
+}
+
+/*claslists for play animation ends*/
+
+.songname {
+    position: absolute;
+    width: 4.5em;
+    height: 1em;
+    display: block;
+    color: #f3cb7c;
+    font-size: 0.9em;
+    top: 6.8em;
+    left: 46vw;
+    text-align: center;
+    z-index: 100000;
+    text-transform: uppercase;
+    font-family: 'Libre Caslon Display', serif;
+}
+
+
+.smallimg {
+    width: 4.5em;
+    position: absolute;
+    top: 3em;
+    left: 47vw;
+    width: 40px;
+
+}
+
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes spin1 {
+    from {
+        transform: rotate(300deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*audio elements and play anaimtion ends*/

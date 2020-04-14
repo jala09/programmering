@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="904.99" height="904.99" viewBox="0 0 904.99 904.99">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+        stroke: #f3cb7c;
+      }
+
+      .cls-2 {
+        stroke-width: 6.99px;
+      }
+
+      .cls-3 {
+        opacity: 0.54;
+      }
+
+      .cls-4 {
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#f3cb7c"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <circle class="cls-2" cx="452.495" cy="452.495" r="449"/>
+    <g class="cls-3">
+      <path class="cls-4" d="M1333.6,514.727s113.13,349.805,566.65,434.54" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1497.01,501.687s333.6,393.95,210.73,811.013" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1063.58,736.417s490.44,266.273,827.8,114.2" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1729.15,597.608s-301.44,359.866-692.07,490.7" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1162.36,613.317s-73.83,553.633,431.62,758.413" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1859.61,1133.65s-397.65,238.5-851.96-204.358" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1272.56,1352.44s315.83-295.27-2.74-805.251" transform="translate(-1002.505 -492.505)"/>
+      <path class="cls-4" d="M1107.9,1229.66s284.72-247.411,775.23-196.74" transform="translate(-1002.505 -492.505)"/>
+    </g>
+  </g>
+</svg>
