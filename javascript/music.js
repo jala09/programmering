@@ -68,7 +68,7 @@ function songplays1(event) {
         play2.classList.remove('twoactive');
         play3.classList.remove('threeactive');
         play4.classList.remove('fouractive');
-        pictireElement.src = '/assets/solange1.png';
+        pictireElement.src = 'assets/solange1.png';
         MyCover1.textContent = 'almeda';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -86,7 +86,7 @@ function songplays2(event) {
         play2.classList.add('twoactive');
         play3.classList.remove('threeactive');
         play4.classList.remove('fouractive');
-        pictireElement.src = '/assets/solange2.png';
+        pictireElement.src = 'assets/solange2.png';
         MyCover1.textContent = 'binz';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -108,7 +108,7 @@ function songplays3(event) {
         play2.classList.remove('twoactive');
         play3.classList.add('threeactive');
         play4.classList.remove('fouractive');
-        pictireElement.src = '/assets/solange2.png';
+        pictireElement.src = 'assets/solange2.png';
         MyCover1.textContent = 'dont';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -131,7 +131,7 @@ function songplays4(event) {
         play2.classList.remove('twoactive');
         play3.classList.remove('threeactive');
         play4.classList.add('fouractive');
-        pictireElement.src = '/assets/solange1.png';
+        pictireElement.src = 'assets/solange1.png';
         MyCover1.textContent = 'stay flo';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -162,7 +162,7 @@ window.addEventListener('keypress', function (e) {
         play2.classList.remove('twoactive');
         play3.classList.remove('threeactive');
         play4.classList.remove('fouractive');
-        pictireElement.src = '/assets/solange1.png';
+        pictireElement.src = 'assets/solange1.png';
         MyCover1.textContent = 'almeda';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -180,7 +180,7 @@ window.addEventListener('keypress', function (e) {
         play1.classList.remove('oneactive');
         play3.classList.remove('threeactive');
         play4.classList.remove('fouractive');
-        pictireElement.src = '/assets/solange2.png';
+        pictireElement.src = 'assets/solange2.png';
         MyCover1.textContent = 'binz';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -197,7 +197,7 @@ window.addEventListener('keypress', function (e) {
         play1.classList.remove('oneactive');
         play2.classList.remove('twoactive');
         play4.classList.remove('fouractive');
-        pictireElement.src = '/assets/solange1.png';
+        pictireElement.src = 'assets/solange1.png';
         MyCover1.textContent = 'dont';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
@@ -215,7 +215,7 @@ window.addEventListener('keypress', function (e) {
         play1.classList.remove('oneactive');
         play2.classList.remove('twoactive');
         play3.classList.remove('threeactive');
-        pictireElement.src = '/assets/solange2.png';
+        pictireElement.src = 'assets/solange2.png';
         MyCover1.textContent = 'stay flo';
         MyCover1.className = 'songname'; // Class name
         console.log(MyCover1);
